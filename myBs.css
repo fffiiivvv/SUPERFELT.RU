@@ -1,0 +1,30 @@
+header{
+    height: 160px;
+}
+
+#mainContainerBg{
+    /*
+    background: url('img/Bg.png') transparent repeat-x top center;
+    */
+}
+
+#mainMenu{
+    background-color: #01a8d5;
+}
+
+#logo{
+    width: 77px;
+}
+
+#productsList{
+    width: 263px;
+}
+
+.affix-top{
+    top:200px;
+}
+.affix {
+    position: fixed;
+    top: 75px;
+}
+
