@@ -16,8 +16,40 @@ header{
     width: 77px;
 }
 
-#productsList{
+
+
+
+
+#productsMenuWrp{
     width: 263px;
+}
+
+#productsMenu{
+    
+}
+
+#productsMenu .btn-group{
+
+}
+
+#productsMenu .btn{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    text-align: left;
+}
+
+#productsMenu .bs-sidebar{
+    margin-bottom: 22px;
+}
+
+#productsMenu .panel-info > .panel-heading{
+    padding: 0px;
+    border: 0;
+}
+
+#productsMenu .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    width: 238px;
+    
 }
 
 .affix-top{
@@ -28,3 +60,41 @@ header{
     top: 75px;
 }
 
+
+
+
+.bs-sidenav {
+    background-color: #F7F5FA;
+    border-radius: 0px 0px 5px 5px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+.bs-sidebar .nav > li > a {
+    color: #716B7A;
+    display: block;
+    padding: 5px 20px;
+}
+.bs-sidebar .nav > li > a:hover, .bs-sidebar .nav > li > a:focus {
+    background-color: #E5E3E9;
+    border-right: 1px solid #DBD8E0;
+    text-decoration: none;
+}
+.bs-sidebar .nav > .active > a, .bs-sidebar .nav > .active:hover > a, .bs-sidebar .nav > .active:focus > a {
+    background-color: rgba(0, 0, 0, 0);
+    border-right: 1px solid #563D7C;
+    color: #563D7C;
+    font-weight: bold;
+}
+.bs-sidebar .nav .nav {
+    /*display: none;*/
+    margin-bottom: 8px;
+}
+.bs-sidebar .nav .nav > li > a {
+    font-size: 90%;
+    padding-bottom: 3px;
+    padding-left: 30px;
+    padding-top: 3px;
+}
