@@ -2,7 +2,7 @@ $(document).ready(function() {
    
    
     
-    $('#productsMenuWrp').affix({
+    $('#productsMenu').affix({
         offset: {
           top: 150
         , bottom: function () {
