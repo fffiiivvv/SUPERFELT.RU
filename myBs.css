@@ -4,11 +4,14 @@ body {
     background: url('img/bg1.jpg') transparent repeat-x top center;
     color:#707070;
 }
-.container {
-    max-width: 1000px;
-}
 header{
-    height: 160px;
+    min-height: 150px;
+}
+.container {
+    max-width: 1040px;
+}
+.myBtnInfo{
+    min-width: 249px;
 }
 
 #mainContainerBg{
@@ -17,12 +20,18 @@ header{
     */
 }
 #phones{
+    display: block;
     color:#fff;
+    font-size: 14px;
 }
 
 #mainMenu{
     background-color: #01a8d5;
 }
+#mainMenu .navbar-brand{
+    padding: 5px 15px;
+}
+
 
 #logo{
     width: 100px;
@@ -48,7 +57,7 @@ header{
 
 
 #productsMenu{
-    width: 222px;
+     width: 300px;
 }
 #productsMenu .myWidth{
     width: 30px;
@@ -68,7 +77,7 @@ header{
 }
 
 #productsMenu .bs-sidebar{
-    margin-bottom: 22px;
+    margin-bottom: 14px;
 }
 
 #productsMenu .panel-info > .panel-heading{
@@ -76,20 +85,29 @@ header{
     border: 0;
 }
 
+
+#productsMenu .myBtn{
+    width: 300px;
+}
+
+
 #productsMenu .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
-    width: 197px;
+    width: 275px;
     padding-left: 9px;
     
 }
 
+.affix-bottom{
+    
+}
 .affix-top{
-    top:200px;
+    top:20px;
 }
 .affix {
     position: fixed;
-    top: 75px;
+    
 }
-
+/*
 
 .bs-sidenav .paddingTop{
     height: 3px;
@@ -128,7 +146,7 @@ header{
     font-weight: bold;
 }
 .bs-sidebar .nav .nav {
-    /*display: none;*/
+    
     margin-bottom: 8px;
 }
 .bs-sidebar .nav .nav > li > a {
@@ -137,3 +155,122 @@ header{
     padding-left: 30px;
     padding-top: 3px;
 }
+*/
+/*
+ * Side navigation
+ *
+ * Scrollspy and affixed enhanced navigation to highlight sections and secondary
+ * sections of docs content.
+ */
+
+/* By default it's not affixed in mobile views, so undo that */
+.myH1{
+    font-size: 23px;
+    text-align: center;
+}
+
+#productsMenuWrp .affix {
+  position: static;
+}
+
+
+/* First level of nav */
+.bs-sidenav {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top:   0px;
+  padding-bottom: 0px;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #f7f5fa;
+  border-radius: 5px;
+  
+  
+}
+
+/* All levels of nav */
+.bs-sidebar .nav > li > a {
+  display: block;
+  color: #716b7a;
+  padding: 5px 20px;
+}
+.bs-sidebar .nav > li > a:hover,
+.bs-sidebar .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #e5e3e9;
+  border-right: 1px solid #dbd8e0;
+}
+.bs-sidebar .nav > .active > a,
+.bs-sidebar .nav > .active:hover > a,
+.bs-sidebar .nav > .active:focus > a {
+  font-weight: bold;
+  color: #EEA236;
+  background-color: transparent;
+  border-right: 1px solid #EEA236;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-sidebar .nav .nav {
+  display: none; /* Hide by default, but at >768px, show it */
+  margin-bottom: 8px;
+}
+.bs-sidebar .nav .nav > li > a {
+  padding-top:    3px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  font-size: 90%;
+}
+
+/* Show and affix the side nav when space allows it */
+@media screen and (min-width: 992px) {
+    .myH1{
+       text-align: left;
+       font-size: 27px;
+    }
+    header{
+        height: 160px;
+    }
+    .bs-sidebar .nav > .active > ul {
+      display: block;
+    }
+ 
+    /* Widen the fixed sidebar */
+    #productsMenuWrp .affix,
+    #productsMenuWrp .affix-bottom {
+      width: 300px;
+    }
+    #productsMenuWrp .affix {
+      position: fixed; /* Undo the static from mobile first approach */
+      top: 80px;
+    }
+    #productsMenuWrp .affix-bottom {
+      position: absolute; /* Undo the static from mobile first approach */
+    }
+    #productsMenuWrp .affix-bottom .bs-sidenav,
+    #productsMenuWrp .affix .bs-sidenav {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+  /* Widen the fixed sidebar again */
+  #productsMenuWrp .affix-bottom,
+  #productsMenuWrp .affix {
+    width: 300px;
+  }
+}
+
+
+#bs-footer{
+    padding-top: 42px;
+}
+
+
+/* Хлебные крошки */
+#path{ height: 30px; list-style: none outside none; margin: 0 0 7px 0; padding: 0; width: 100%; }
+#path li.start,
+#path li{background: url("/img/path_arr.png") no-repeat scroll 0 5px transparent; float: left; margin: 0 6px 0 0; padding: 0 0 0 0; }
+#path li.start{background: none; padding:0;}
+#path a{color:#41372a; text-decoration:underline;}
+#path a:hover{text-decoration: none;}
+#path li.sel{text-decoration: none;}
